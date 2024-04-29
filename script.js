@@ -23,16 +23,33 @@ function addContent(data) {
   console.log(data.entreprise.texteAppelAction)
   console.log(data.entreprise.avantagesClients)
 
+  
   let nom = data.entreprise.nomCommercial;
   let phraseAccroche=data.entreprise.phraseAccroche;
   let appelAction = data.entreprise.texteAppelAction;
   let avantages = data.entreprise.avantagesClients;
+  let produits = data.entreprise.produits;
+  let services = data.entreprise.services;
+  let temoignages = data.entreprise.temoignages;
 
   avantages.forEach(element => {
     console.log(element)
     
   });
 
+  produits.forEach(element => {
+    console.log(element)
+    
+  });
 
+  services.forEach(element => {
+    console.log(element)
+    
+  });
+
+  temoignages.forEach(element => {
+    console.log(element)
+    
+  });
 
 }
