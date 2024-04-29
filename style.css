@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color:  #6c5135;
+}
+
+.heather1{
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+width: 25%;
+}
+
+.pictogramme{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+.header2{
+    width: 50%;
+    padding: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.phraseAccroche{
+    font-size: 35px;
+    margin: 20px 30% ;
+}
+
+li{
+    list-style: none;
+}
+
+.white{
+    color: #E0D8B0;
+}
+
+.brown{
+    color: #6c5135;
+}
+
+
+main{
+    background-color: #E0D8B0 ;
+}
+.avantages{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.produits{
+margin:  50px 25px;
+}
+
+.content{
+    width: 15%;
+    height: 250px;
+background-color: white;
+border-radius: 15px;
+padding: 10px;
+}
+
+.acheter{
+margin:  10px 35px;
+}
+
+.service{
+            /* a remplir*/
+}
+
+.Avis{
+            /* a remplir*/
+}
+
+.divComentaire{
+            /* a remplir*/
+}
+
+.prenom{
+            /* a remplir*/
+}
+
+.Experience{
+            /* a remplir*/
+}
+
+.NombreEtoile{
+            /* a remplir*/
+}
+
+.Commentaire{
+            /* a remplir*/
+}
