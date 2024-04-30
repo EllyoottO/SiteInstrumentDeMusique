@@ -117,6 +117,7 @@ main{
     display: flex;
     justify-content: space-evenly;
     margin: 3% 0 ;
+    padding: 3% 10%;
 }
 
 .txtService{
@@ -136,37 +137,64 @@ main{
 #temoignage{
 display: flex;
 flex-wrap: wrap;
-background-color: blue;
+margin-top: 100px;
+padding: 3% 10%;
 }
 
 .temContour{
-    width: 40%;
+    background-color: blue;
+    width:30%;
+    height: 100px;
 }
 
-.divComentaire{
-background-color: aqua;
-width: 100%;
+
+
+
+
+/*.infoClients{
+    width: 50%;
+    background-color: blue;
+    padding: 30px 10px;
+    border-radius: 50px ;
 }
 
-.prenom{
+.prenomTitre{
 background-color: bisque;
 width: 100%;
 display: flex;
+justify-content: space-between;
+margin-bottom: 10px;
 }
 .prenom p {
     width: 40%;
 }
 
+.avatar{
+    background-color: brown;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.divComentaire{
+background-color: aqua;
+width: 100%;
+margin-bottom: 20px;
+}
+
 .etoiles{
-width: 40%;
-background-color: blue;
+background-color: aqua;
 }
 
 
 .NombreEtoile{
 display: flex;
+width: fit-content;
+background-color: blue;
 }
 
 .Commentaire{
             /* a remplir*/
-}
+
+/*
