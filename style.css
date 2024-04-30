@@ -1,26 +1,29 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 header{
+    width: 100%;
     background-color:  #6c5135;
     padding: 15px 15px;
-}
-
-.heather1{
-    
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+
+
 .logo{
-width: 25%;
+width: 5%;
+display: inline-block
 }
 
 .imgLogo{
-    width: 80px;
-    margin: 10px 0;
+    width: 100%;
     border-radius: 50px;
 }
 
@@ -30,21 +33,30 @@ width: 25%;
     width: 25%;
 }
 
-.header2{
-    width: 50%;
-    padding: 50px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
+.hero{
+    width: 100%;
+    height: 100vh;
+background-image: url(https://images.pexels.com/photos/276381/pexels-photo-276381.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
 }
 
 .phraseAccroche{
+    width: 100%;
     font-size: 35px;
-    margin: 20px 30% ;
+    
 }
 
+.hero div {
+    
+    width: 50%;
+    text-align: center;
+}
 li{
     list-style: none;
 }
@@ -67,44 +79,92 @@ main{
     justify-content: space-around;
 }
 
-.produits{
-margin:  50px 25px;
+#produits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    background-color: aqua;
+    padding: 3% 10%;
 }
 
-.content{
-    width: 15%;
-    height: 250px;
-background-color: white;
-border-radius: 15px;
-padding: 10px;
+.Carteproduit{
+    width: 17%;
+    background-color: blue;
+    border-radius: 15px;
 }
 
-.acheter{
-margin:  10px 35px;
+.Carteproduit img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    object-fit: cover;
 }
 
-.service{
-            /* a remplir*/
+.Carteproduit div{
+    text-align: center;
 }
 
-.Avis{
-            /* a remplir*/
+.Carteproduit a{
+    width: fit-content;
+    display:block;
+    background-color: aqua;
+    margin: 10px auto;
+    padding: 3%;
+}
+#serv{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 0 ;
+}
+
+.txtService{
+    background-color: blue;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 22px;
+    border-radius: 5px;
+}
+
+.txtService h3{
+    margin: 0 20px 5px 20px;
+}
+
+#temoignage{
+display: flex;
+flex-wrap: wrap;
+background-color: blue;
+}
+
+.temContour{
+    width: 40%;
 }
 
 .divComentaire{
-            /* a remplir*/
+background-color: aqua;
+width: 100%;
 }
 
 .prenom{
-            /* a remplir*/
+background-color: bisque;
+width: 100%;
+display: flex;
+}
+.prenom p {
+    width: 40%;
 }
 
-.Experience{
-            /* a remplir*/
+.etoiles{
+width: 40%;
+background-color: blue;
 }
+
 
 .NombreEtoile{
-            /* a remplir*/
+display: flex;
 }
 
 .Commentaire{

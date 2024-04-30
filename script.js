@@ -32,19 +32,48 @@ function addContent(data) {
   let services = data.entreprise.services;
   let temoignages = data.entreprise.temoignages;
 
+  document.querySelector("#nom").innerHTML = nom
+  document.querySelector("#PhraseAccr").innerHTML = phraseAccroche
+  document.querySelector("#AplAAction").innerHTML = appelAction
+  
+
   avantages.forEach(element => {
     console.log(element)
+
+    document.querySelector("#avant").innerHTML += 
+    `<p class="brown">${element}</p>`
     
   });
 
   produits.forEach(element => {
     console.log(element)
+
+    document.querySelector("#produits").innerHTML +=
+    `
+    <div class="Carteproduit">
+                <img src="${element.image}" alt="">
+                <div id="carteContent">
+                    <p>${element.nom}</p>
+                    <p>${element.description}</p>
+                </div>
+                <a href="" class="acheter brown">
+                    <i class="fa-solid fa-basket-shopping"></i> Acheter
+                </a>
+            </div>
+    `
     
   });
 
   services.forEach(element => {
     console.log(element)
     
+    document.querySelector("#serv").innerHTML += 
+    `
+    <div class="txtService">
+       <h3>${element.nom}</h3>
+       <p class="brown">${element.description}</p>
+    </div>
+    `
   });
 
   temoignages.forEach(element => {
