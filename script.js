@@ -16,22 +16,27 @@ fetch("instrumentsMusiques.json")
 
 // Cette fonction prend les données JSON en entrée et effectue une action sur celles-ci
 function addContent(data) {
+  
   // Affiche les données dans la console du navigateur
-  console.log(data)
-  console.log(data.entreprise.nomCommercial);
-  console.log(data.entreprise.phraseAccroche)
-  console.log(data.entreprise.texteAppelAction)
-  console.log(data.entreprise.avantagesClients)
+    console.log(data)
+    console.log(data.entreprise.nomCommercial);
+    console.log(data.entreprise.phraseAccroche)
+    console.log(data.entreprise.texteAppelAction)
+    console.log(data.entreprise.avantagesClients)
 
   // creation de variables pour avoir mon chemin j'usqu'à mes éléments 
   // test d'affichage dans ma console
-  let nom = data.entreprise.nomCommercial;
-  let phraseAccroche=data.entreprise.phraseAccroche;
-  let appelAction = data.entreprise.texteAppelAction;
-  let avantages = data.entreprise.avantagesClients;
-  let produits = data.entreprise.produits;
-  let services = data.entreprise.services;
-  let temoignages = data.entreprise.temoignages;
+    let nom = data.entreprise.nomCommercial;
+    let phraseAccroche=data.entreprise.phraseAccroche;
+    let appelAction = data.entreprise.texteAppelAction;
+    let avantages = data.entreprise.avantagesClients;
+    let produits = data.entreprise.produits;
+    let services = data.entreprise.services;
+    let temoignages = data.entreprise.temoignages;
+
+  //tableau pictogramme avantages
+
+
 
   //lien pour importer le JS dans l'HTML
   document.querySelector("#nom").innerHTML = nom
@@ -89,7 +94,7 @@ function addContent(data) {
     `
   });
 
-  
+
   // tableau pour les TEMOIGNAGES
   temoignages.forEach(element => {
     console.log(element)
