@@ -6,17 +6,19 @@
     <title>MusicHalle - Instruments du Monde</title>
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 
     <script src="script.js" defer></script>
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Homemade+Apple&family=Inconsolata:wght@200..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Homemade+Apple&family=Inconsolata:wght@200..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Homemade+Apple&family=Inconsolata:wght@200..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Homemade+Apple&family=Inconsolata:wght@200..900&family=Marcellus&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Reddit+Mono:wght@200..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
     </style>
-    
+
 
 </head>
 
@@ -33,11 +35,10 @@
         </ul>
 
     </header>
-    <div class="hero">
+    <div class="hero" id="hero">
         <div>
-            <p class="phraseAccroche" id="PhraseAccr">Phrase accroche</p>
-           
-            <a href="#produits" id="AplAAction"></a>
+            <p class="phraseAccroche fontSerif" id="PhraseAccr">Phrase accroche</p>
+            <a href="#produits" class="fontSansSerif " id="AplAAction">texte appelation action</a>
         </div>
 
     </div>
@@ -46,24 +47,26 @@
     <main>
         <div class="avantages" id="avant">
         </div>
-
+        <h3 class="titreSection white ">Nos Produits</h3>
         <div id="produits">
 
-            
+
 
         </div>
-
+        <h3 class="titreSection white ">Nos services</h3>
         <div class="service" id="serv">
-           
 
 
-        </div>
-
-        <div data-aos="fade-left" id="temoignage">
 
         </div>
-        
-        
+        <section class="comentaireSection">
+            <h3 class="titreComentaires brown ">Commentaires</h3>
+            <div data-aos="fade-left" id="temoignage">
+            </div>
+        </section>
+
+
+
 
 
 
@@ -86,11 +89,11 @@
             <div class="Navigation">
                 <h3>Navigation</h3>
                 <ul>
-                    <li> <a href="">Acceuil</a></li>
-                    <li><a href="">Nos Avantages</a></li>
-                    <li><a href="">Nos Produits</a></li>
-                    <li><a href="">Nos Services</a></li>
-                    <li><a href="">Commentaires</a></li>
+                    <li> <a href="#hero">Acceuil</a></li>
+                    <li><a href="#avant">Nos Avantages</a></li>
+                    <li><a href="#produits">Nos Produits</a></li>
+                    <li><a href="#serv">Nos Services</a></li>
+                    <li><a href="#temoignage">Commentaires</a></li>
                 </ul>
             </div>
 

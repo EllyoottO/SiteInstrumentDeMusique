@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-margin-top: 200px;
+    scroll-behavior: smooth;
 }
 
 
@@ -48,9 +50,17 @@ header {
     flex-wrap: wrap;
 }
 
+.hero a {
+    background-color: #A79277;
+    padding: 5px;
+    border-radius: 5px;
+    color: #322C2B;
+}
+
 .phraseAccroche {
     width: 100%;
     font-size: 35px;
+    margin-bottom: 15px;
 
 }
 
@@ -89,10 +99,16 @@ a{
     font-family: "Marcellus", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 15px;
 }
 .fontSansSerif{
     font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.titreSection{
+    font-size: 35px;
+    font-family: "Marcellus", serif;
+    margin: 60px 0 0 30px ;
+    width: 100%;
 }
 
 /* fin liste */
@@ -107,6 +123,9 @@ main {
     display: flex;
     justify-content: space-around;
     background-color: #A79277;
+    font-size: 13px;
+    color: #322C2B;
+    
 }
 
 /* -> les produits */
@@ -135,6 +154,7 @@ main {
 
 .Carteproduit div {
     text-align: center;
+    padding: 5px 10px;
 }
 
 .Carteproduit a {
@@ -145,9 +165,28 @@ main {
     padding: 3%;
     border-radius: 5px;
 }
+
+.cardTitre{
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+.cardDesc{
+    color: #322C2B;
+}
+
 /* Fin produits <- */
 
 /* -> les services */
+
+.serviceTitre{
+    font-size: 20px;
+}
+
+.serviceTexte{
+    font-size: 15px;
+}
+
 #serv {
     display: flex;
     justify-content: space-evenly;
@@ -172,11 +211,22 @@ main {
 /* Fin services <- */
 
 /* -> les temoignages */
+
+.comentaireSection{
+    background-color: #A79277;  
+}
+.titreComentaires{
+    font-size: 35px;
+    font-family: "Marcellus", serif;
+    margin: 60px 0 0 30px ;
+    padding-top: 3%;
+    width: 100%; 
+}
 #temoignage {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 40px;
     padding: 3% 10%;
     background-color: #A79277;
 }
@@ -219,12 +269,11 @@ main {
     display: flex;
     align-items: center;
     width: fit-content;
+    color: #D36B00;
+    font-size: 15px;
     
 }
 
-.NombreEtoile li i{
-    font-size: 0.8rem;
-}
 /* Fin temoignage <- */
 
 

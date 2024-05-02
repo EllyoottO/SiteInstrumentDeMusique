@@ -34,8 +34,11 @@ function addContent(data) {
     let services = data.entreprise.services;
     let temoignages = data.entreprise.temoignages;
 
-  //tableau pictogramme avantages
-
+  
+   /* function etoileNote (note){
+      let etoileChaine =
+      for let
+    }*/
 
 
   //lien pour importer le JS dans l'HTML
@@ -51,7 +54,7 @@ function addContent(data) {
     document.querySelector("#avant").innerHTML += 
 
     // code HTML dans le JS
-    `<p class="brown fontSerif">${element.pictoAvant} ${element.phrAvant}</p>`
+    `<p class=" fontSerif">${element.pictoAvant} ${element.phrAvant}</p>`
     
   });
 
@@ -67,8 +70,8 @@ function addContent(data) {
     <div class="Carteproduit">
                 <img src="${element.image}" alt="">
                 <div id="carteContent">
-                    <p>${element.nom}</p>
-                    <p>${element.description}</p>
+                    <p class="cardTitre fontSerif">${element.nom}</p>
+                    <p class="cardDesc fontSansSerif">${element.description}</p>
                 </div>
                 <a href="" class="acheter brown">
                     <i class="fa-solid fa-basket-shopping"></i> Acheter
@@ -88,8 +91,8 @@ function addContent(data) {
     // code HTML dans le JS
     `
     <div class="txtService">
-       <h3 class="white">${element.nom}</h3>
-       <p class="white">${element.description}</p>
+       <h3 class="white serviceTitre fontSerif">${element.nom}</h3>
+       <p class="white serviceTexte fontSansSerif">${element.description}</p>
     </div>
     `
   });
@@ -103,7 +106,7 @@ function addContent(data) {
 
     // code HTML dans le JS
     `
-  <div class="temContour">
+  <div class="temContour" >
 
     <div class="infoClients">
         <p class="avatar">${element.prenom[0]}</p>
@@ -112,16 +115,10 @@ function addContent(data) {
             <p class="white fontSerif">${element.typeExperience}</p>
         </div>
 
-        <ul class="NombreEtoile">
-                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
-                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
-                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
-                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
-                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
-        </ul>
+      <p class="NombreEtoile"> ${avis(element.note)} </p>
             
     </div>
-        <p class="Commentaire">${element.commentaire}</p>
+        <p class="Commentaire fontSansSerif">${element.commentaire}</p>
 
   </div>
     `
@@ -139,3 +136,17 @@ L.marker([45.43204, 4.39482]).addTo(map)
     .openPopup();
 }
 
+//fonction etoiles
+
+function avis(note){
+  let chaine =""
+  // Met la note sur 5
+  for(let i=1; i<=note; i++){
+      chaine+="★"
+  }
+  // Met la note du client
+  for(let j=0; j<5-note;j++){
+      chaine+="☆"
+  }
+  return chaine
+}
