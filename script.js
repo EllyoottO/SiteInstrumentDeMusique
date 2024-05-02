@@ -41,7 +41,7 @@ function addContent(data) {
     console.log(element)
 
     document.querySelector("#avant").innerHTML += 
-    `<p class="brown">${element}</p>`
+    `<p class="white">${element}</p>`
     
   });
 
@@ -70,8 +70,8 @@ function addContent(data) {
     document.querySelector("#serv").innerHTML += 
     `
     <div class="txtService">
-       <h3>${element.nom}</h3>
-       <p class="brown">${element.description}</p>
+       <h3 class="white">${element.nom}</h3>
+       <p class="white">${element.description}</p>
     </div>
     `
   });
@@ -79,6 +79,31 @@ function addContent(data) {
   temoignages.forEach(element => {
     console.log(element)
     
+    document.querySelector("#temoignage").innerHTML +=
+
+    `
+  <div class="temContour">
+
+    <div class="infoClients">
+        <p class="avatar">${element.prenom[0]}</p>
+        <div class="prenomTitre">
+            <p class="brown fontSerif">${element.prenom}</p>
+            <p class="brown fontSerif">${element.typeExperience}</p>
+        </div>
+
+        <ul class="NombreEtoile">
+                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
+                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
+                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
+                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
+                    <li><i class="fa-regular fa-star fa-flip-horizontal" style="color: #cc9e00;"></i></li>
+        </ul>
+            
+    </div>
+        <p class="Commentaire">${element.commentaire}</p>
+
+  </div>
+    `
   });
 
 }
