@@ -23,7 +23,8 @@ function addContent(data) {
   console.log(data.entreprise.texteAppelAction)
   console.log(data.entreprise.avantagesClients)
 
-  
+  // creation de variables pour avoir mon chemin j'usqu'à mes éléments 
+  // test d'affichage dans ma console
   let nom = data.entreprise.nomCommercial;
   let phraseAccroche=data.entreprise.phraseAccroche;
   let appelAction = data.entreprise.texteAppelAction;
@@ -32,23 +33,31 @@ function addContent(data) {
   let services = data.entreprise.services;
   let temoignages = data.entreprise.temoignages;
 
+  //lien pour importer le JS dans l'HTML
   document.querySelector("#nom").innerHTML = nom
   document.querySelector("#PhraseAccr").innerHTML = phraseAccroche
   document.querySelector("#AplAAction").innerHTML = appelAction
   
 
+// tableau pour les AVANTAGES
   avantages.forEach(element => {
     console.log(element)
 
     document.querySelector("#avant").innerHTML += 
-    `<p class="white">${element}</p>`
+
+    // code HTML dans le JS
+    `<p class="brown fontSerif">${element}</p>`
     
   });
 
+
+  // tableau pour les PRODUITS
   produits.forEach(element => {
     console.log(element)
 
     document.querySelector("#produits").innerHTML +=
+
+    // code HTML dans le JS
     `
     <div class="Carteproduit">
                 <img src="${element.image}" alt="">
@@ -64,10 +73,14 @@ function addContent(data) {
     
   });
 
+
+  // tableau pour les SERVICES
   services.forEach(element => {
     console.log(element)
     
     document.querySelector("#serv").innerHTML += 
+
+    // code HTML dans le JS
     `
     <div class="txtService">
        <h3 class="white">${element.nom}</h3>
@@ -76,19 +89,22 @@ function addContent(data) {
     `
   });
 
+  
+  // tableau pour les TEMOIGNAGES
   temoignages.forEach(element => {
     console.log(element)
     
     document.querySelector("#temoignage").innerHTML +=
 
+    // code HTML dans le JS
     `
   <div class="temContour">
 
     <div class="infoClients">
         <p class="avatar">${element.prenom[0]}</p>
         <div class="prenomTitre">
-            <p class="brown fontSerif">${element.prenom}</p>
-            <p class="brown fontSerif">${element.typeExperience}</p>
+            <p class="white fontSerif">${element.prenom}</p>
+            <p class="white fontSerif">${element.typeExperience}</p>
         </div>
 
         <ul class="NombreEtoile">
