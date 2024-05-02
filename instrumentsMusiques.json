@@ -4,9 +4,17 @@
       "phraseAccroche": "Explorez la diversité musicale avec MusicHalle, votre boutique d'instruments du monde à Paris",
       "texteAppelAction": "Découvrez notre collection unique",
       "avantagesClients": [
-        "Sélection éclectique d'instruments du monde",
-        "Conseils personnalisés de nos experts passionnés",
-        "Ambiance accueillante pour une expérience de shopping authentique"
+        
+      
+        
+
+        {"phrAvant":"Sélection éclectique d'instruments du monde",
+          "pictoAvant":"<i class='fa-solid fa-globe'></i>"},
+        {"phrAvant":"Ambiance accueillante pour une expérience de shopping authentique",
+        "pictoAvant":"<i class='fa-solid fa-shop'></i>"},
+        {"phrAvant":"Conseils personnalisés de nos experts passionnés",
+        "pictoAvant":"<i class='fa-solid fa-comments'></i>"}
+
       ],
       
       "produits": [

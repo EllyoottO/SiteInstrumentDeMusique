@@ -51,7 +51,7 @@ function addContent(data) {
     document.querySelector("#avant").innerHTML += 
 
     // code HTML dans le JS
-    `<p class="brown fontSerif">${element}</p>`
+    `<p class="brown fontSerif">${element.pictoAvant} ${element.phrAvant}</p>`
     
   });
 
@@ -127,4 +127,15 @@ function addContent(data) {
     `
   });
 
+  //map du footer
+  var map = L.map('map').setView([45.43204, 4.39482], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([45.43204, 4.39482]).addTo(map)
+    .bindPopup('Rejoignez nous.<br> 8 Pl. Villebœuf, 42100 Saint-Etienne.')
+    .openPopup();
 }
+
